@@ -1,4 +1,5 @@
 p0=/dev/shm/bilibili #别带空格
+
 #/dev/shm/bilibili
 #cp ./cookies.txt /dev/shm/bilibili/
 #cd /dev/shm/bilibili
@@ -9,9 +10,9 @@ p0=/dev/shm/bilibili #别带空格
 #开一个chromium profile，专门给ytdlp读取登录cookie，而不用担心主浏览器cookie泄漏
 
 mkdir $p0
-cd $p0
+cd $p0 || exit
 
-yt-dlp "$@" --cookies-from-browser chrome:~/cache/chromium-ytdlp
+yt-dlp "$@" --cookies-from-browser "chrome:$HOME/cache/chromium-ytdlp"
 
 #下载完后手动开，不删旧文件
 dolphin $p0
