@@ -1,4 +1,4 @@
-p0=~/Downloads/bilibili #别带空格
+p0=~/Desktop/bilibili #别带空格
 
 #/dev/shm/bilibili
 #cp ./cookies.txt /dev/shm/bilibili/
