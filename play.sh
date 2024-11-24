@@ -12,7 +12,7 @@ p0=~/Desktop/bilibili #别带空格
 mkdir $p0
 cd $p0 || exit
 
-yt-dlp "$@" --cookies-from-browser "chrome:$HOME/cache/chromium-ytdlp"
+yt-dlp "$@" --cookies-from-browser "chrome:$HOME/profiles/chromium-ytdlp"
 
 #下载完后手动开，不删旧文件
 dolphin $p0
